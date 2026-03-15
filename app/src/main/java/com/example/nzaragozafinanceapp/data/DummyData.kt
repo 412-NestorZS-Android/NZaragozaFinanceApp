@@ -7,7 +7,7 @@ import com.example.nzaragozafinanceapp.model.*
 
 object DummyData {
 
-    val user = User("Juan", 1200.00)
+    val user = User("Ness", 1200.00)
 
     val summaryCards = listOf(
         SummaryCard("Actividad", 0.0, Color(0xFFD6E4E5)),

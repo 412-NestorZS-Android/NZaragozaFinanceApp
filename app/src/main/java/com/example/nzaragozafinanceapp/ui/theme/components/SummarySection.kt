@@ -12,13 +12,14 @@ fun SummarySection(cards: List<SummaryCard>) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .height(180.dp)
+            .height(210.dp)
     ) {
 
         SummaryCardItem(
             title = cards[0].title,
             amount = cards[0].amount,
             color = cards[0].color,
+            showIcon = true,
             modifier = Modifier
                 .weight(1f)
                 .fillMaxHeight()

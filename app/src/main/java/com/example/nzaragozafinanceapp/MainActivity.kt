@@ -3,8 +3,8 @@ package com.example.nzaragozafinanceapp
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import com.example.nzaragozafinanceapp.ui.screens.HomeScreen
-
+import com.example.nzaragozafinanceapp.ui.theme.NZaragozaFinanceAppTheme
+import com.example.nzaragozafinanceapp.ui.theme.screens.HomeScreen
 
 class MainActivity : ComponentActivity() {
 
@@ -12,7 +12,11 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            HomeScreen()
+
+            NZaragozaFinanceAppTheme {
+                HomeScreen()
+            }
+
         }
     }
 }
